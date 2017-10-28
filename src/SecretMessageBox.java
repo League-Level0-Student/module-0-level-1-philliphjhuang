@@ -18,21 +18,23 @@ public class SecretMessageBox {
 	// 0. Make a main method and put steps 1-5 inside it
 	public static void main(String[] args) {
 	// 1. Set the passcode in a String variable
-	String name = JOptionPane.showInputDialog("1*2*3*4*5*6...*99=?");
-	// 2. Using a pop-up, ask for a secret message and store it in a variable
-	if (name.equals("4950")) {
-		JOptionPane.showMessageDialog(null, "Hi");
+		String passcode = ("123456789");
+		
+		
+	String message = JOptionPane.showInputDialog("Please Enter A Secret Message");
+
+		// 3. Ask your friend for the passcode and store it in a variable
+String kkk = JOptionPane.showInputDialog("What is the passcode?");
+	// 4. If the passcode matches, show the secret message
+	if (kkk.equalsIgnoreCase(passcode)) {
+		JOptionPane.showMessageDialog(null, message);
 	}
+	
+	// 5. If the passcode does not match, pop-up "INTRUDER!!"
 	else {
 		JOptionPane.showMessageDialog(null, "INTRUDER");
 	}
-
-
-	// 3. Ask your friend for the passcode and store it in a variable
-
-	// 4. If the passcode matches, show the secret message
-
-	// 5. If the passcode does not match, pop-up "INTRUDER!!"
+	
 
 	// [optional] 6. Have your friend also enter a username, and make sure it is correct before releasing the secret message.
 
